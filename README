@@ -1,0 +1,26 @@
+This repository has the code to train load forecast models, implement attacks that modify meter readings, and create an ensemble of forecasters to mitigate the attacks. This code was used in the following paper:
+
+Barreto C., Koutsoukos X. (2019) Design of Load Forecast Systems Resilient Against Cyber-Attacks. In: Alpcan T., Vorobeychik Y., Baras J., Dán G. (eds) Decision and Game Theory for Security. GameSec 2019. Lecture Notes in Computer Science, vol 11836. Springer, Cham. https://doi.org/10.1007/978-3-030-32430-8_1
+
+
+
+Instructions
+
+The folder 'forecast_lib' defines the methods used to train the and attack the forecasters.
+
+We save the forecasters in 'models' and the performance emtrics in 'results'. 
+
+The folder 'experiments' has the code used on different simulations
+
+We use the following scripts:
+
+	'build_predictors.py' Script that build load forecasters
+
+	'accuracy_models.py' Script that compute the accuracy of the models 
+
+	'attack.py' Script that implements attacks on the forecaster
+
+	'plot_accuracy.py' Script that plots the prediction error of the models
+
+	'plot_impact.py' Script that plots the impact of the attacks
+
